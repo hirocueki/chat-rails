@@ -1,5 +1,9 @@
-%h1 Chat Room
-%input#chat-input
-  %button#button 送信
-#messages
-  = render @messages
+.container
+  %h1 Chat Room
+  %form.form-inline
+    .form-group
+      %input#chat-input.form-control
+    %button#button.btn.btn-primary 送信
+  #messages
+    %ul.list-group
+      = render @messages
